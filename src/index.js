@@ -91,7 +91,49 @@ document.addEventListener('DOMContentLoaded',()=>{
     // add eventlistener to the search Button.
     searchButton.addEventListener('click',()=>{
         searchGames();
-    })   
+    });
+    
+    function submitComment(event) {
+        event.preventDefault(); 
+      
+        // Get form values
+        const name = document.getElementById('fname').value;
+        const comment = document.getElementById('comment').value;
+      
+        // Create an object to represent the comment
+        const newComment = {
+          name,
+          comment,
+          // Add timestamp for each comment
+          timestamp: new Date().toLocaleString() 
+      };
+      
+      // Clear form fields after submission
+      document.getElementById('fname').value = '';
+      document.getElementById('comment').value = '';
+      
+      // Display the submitted comment in the commentsList div
+      
+      const commentItem = document.createElement('div');
+      commentItem.innerHTML = `
+         
+      ${newComment.name}
+      
+         Commented: ${newComment.comment}
+      
+         Submitted at: ${newComment.timestamp}
+      
+      
+      `;
+      
+      document.getElementById('commentsList').appendChild(commentItem);
+
+      }
+      submitComment(event);
+
+      
+      // Add event listener to handle form submission
+    document.getElementById('submitComment').addEventListener('click', submitComment);
 
 
     

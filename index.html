@@ -23,11 +23,25 @@
                         <div id="img"></div>
                         <!--image will appear here-->
                     </div>
+                    <div class="description">
+                        <!-- games description will appear here-->
+                    </div>
                 </div>
-                <div class="description">
-                    <!-- games description will appear here-->
-                </div>
+                
                 <div class="extra-content">
+                    <div id="comments">
+                        <h2> Comments</h2>
+                        <form id="commentForm">
+                            <label for="fname">Enter Your Name:</label><br>
+                            <input type="text" id="fname" name="fname" autocomplete="given-name"/><br>
+                            <label for="Comment">Leave a comment:</label><br>
+                            <input type="text" id="comment" name="comment" autocomplete="comment"/>
+                        </form>
+                          <button id="submitComment">Submit</button>
+
+                          <div id="commentsList">Show Comments</div>
+
+                    </div>
                    
                 </div>
            
