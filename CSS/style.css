@@ -25,7 +25,7 @@ body{
 
 }
 .game-details{
-    flex: 1;
+    flex: 2;
     background-color: brown;
     display: flex;
     gap: 5px;
@@ -50,7 +50,8 @@ body{
   justify-content: left;
   align-items: left;
   padding-top: 15%;
-  width: 
+  width: 100px;
+  height:fit-content;
 }
 #search-input{
     width: 160px;
