@@ -1,17 +1,17 @@
-MO'S GAME SITE WEB APP.
+## MO'S GAME SITE WEB APP.
 
  Mo's game site is a web application that allows users to compare game prices of various games within the site and comment how the feel about them. This project implements a mini web application using HTML,CSS and Javascript; fetching data from a public API server.
 
  AUTHOR: Omondi Maurine.
 
-PROJECT GOALS
+## PROJECT GOALS
 
 Main goals of this project are:
 1. Creating and Implementing a web application using HTML,CSS and JAVASCRIPT.
 2. Fetching data from a Public API.
 3. Creating a user interface  for viewing games details, searching a game and dropping a comment.
 
-PROJECT DELIVERABLES.
+## PROJECT DELIVERABLES.
 
 As a user, you can:
 
