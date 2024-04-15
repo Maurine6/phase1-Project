@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         const imgElement = gameImage.querySelector('img');
         // hide the game image for 5seconds when clicked.
-        imgElement.addEventListener("click",()=>{
+        imgElement.addEventListener("submit",()=>{
             imgElement.style.display='none'
 
             setTimeout(()=>{
                 imgElement.style.display='block'
             },5000);
-        })
+        });
 
         // display games description
         gameDescription.innerHTML = `
